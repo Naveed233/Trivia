@@ -32,12 +32,12 @@ class QuizInterface:
 		self.question_text = self.canvas.create_text(150,125,width=280, text="", fill=THEME_COLOR, font=("Arial",15,"italic"))
 		self.canvas.grid(column=0, row=1, columnspan=2,pady=50)
 
-		self.true = PhotoImage(file="images/true.png")
+		self.true = PhotoImage(file="true.png")
 		self.tick_button = Button(image=self.true, highlightthickness=0, command=self.correct)
 		self.tick_button.grid(row=2, column=1)
 
 
-		self.false = PhotoImage(file="images/false.png")
+		self.false = PhotoImage(file="false.png")
 		self.x_button = Button(image=self.false, highlightthickness=0, command=self.incorrect)
 		self.x_button.grid(row=2, column=0)
 
